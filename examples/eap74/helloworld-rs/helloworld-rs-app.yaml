@@ -5,7 +5,7 @@ build:
   s2i:
     jdk: "11"
     galleonLayers:
-      - jaxrs-server
+      - jaxrs-server,web-clustering
   env:
   - name: ARTIFACT_DIR
     value: helloworld-rs/target
